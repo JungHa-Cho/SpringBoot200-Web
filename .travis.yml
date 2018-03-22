@@ -22,7 +22,8 @@ before_script:
 script:
   - "./gradlew clean build"
 
-before deploy:
+before_deploy:
+  - "echo 'ready?'"
   - ls
   - pwd
   - zip -r SpringBoot200-Web *
@@ -37,7 +38,7 @@ deploy:
     region: ap-northeast-2
     skip_cleanup: true
     acl: public_read
-    local_dir: ${TRAVIS_BUILD_DIR}/deploy # before_deploy에서 생성한 디렉토리
+    local_dir: deploy # before_deploy에서 생성한 디렉토리
     wait-until-deployed: true
     on:
       repo: JungHa-Cho/SpringBoot200-Web  #Github 주소
