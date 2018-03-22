@@ -17,10 +17,10 @@ cache:
 
 script: "./gradlew clean build"
 
-#before deploy:
-#  - zip -r springboot200-web *
-#  - mkdir -p deploy
-#  - mv springboot200-web.zip deploy/springboot200-web.zip
+before deploy:
+  - zip -r SpringBoot200-Web *
+  - mkdir -p deploy
+  - mv SpringBoot200-Web.zip deploy/SpringBoot200-Web.zip
 
 deploy:
   - provider: s3
@@ -30,7 +30,7 @@ deploy:
     region: ap-northeast-2
     skip_cleanup: true
     acl: public_read
-#    local_dir: deploy # before_deploy에서 생성한 디렉토리
+    local_dir: deploy # before_deploy에서 생성한 디렉토리
     wait-until-deployed: true
     on:
       repo: JungHa-Cho/SpringBoot200-Web  #Github 주소
