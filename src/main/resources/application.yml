@@ -8,5 +8,5 @@ spring:
 ---
 spring:
   profiles: local
-    jpa:
-      show-sql: true
+  jpa:
+    show-sql: true
