@@ -1,4 +1,4 @@
-### Spring Boot 2.0.0으로 웹 서비스 해보기
+### Spring Boot 2.0.0으로 웹 서비스 해보기 [![Build Status](https://travis-ci.org/JungHa-Cho/SpringBoot200-Web.svg?branch=master)](https://travis-ci.org/JungHa-Cho/SpringBoot200-Web)
 
 - [강좌 참조](https://github.com/jojoldu/springboot-webservice)    
     
