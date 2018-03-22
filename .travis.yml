@@ -2,9 +2,6 @@ language: java
 jdk:
   - openjdk8
 
-before_install:
-  - chmod +x gradlew
-
 branches:
   only:
     - master
@@ -15,9 +12,16 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-script: "./gradlew clean build"
+before_script:
+  - chmod +x gradlew
+
+script:
+  - "./gradlew clean build"
+  - ls
+  - mkdir -p deploy
 
 before deploy:
+  - ls
   - zip -r SpringBoot200-Web *
   - mkdir -p deploy
   - mv SpringBoot200-Web.zip deploy/SpringBoot200-Web.zip
