@@ -18,9 +18,9 @@ cache:
 script: "./gradlew clean build"
 
 before deploy:
-  - zip -r springboot-webservice *
+  - zip -r springboot200-web *
   - mkdir -p deploy
-  - mv springboot-webservice.zip deploy/springboot-webservice.zip
+  - mv springboot200-web.zip deploy/springboot200-web.zip
 
 deploy:
   - provider: s3
