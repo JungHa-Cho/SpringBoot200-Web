@@ -17,7 +17,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'personal.cjh'
-version = 'VERSION-0.0.38'
+version = 'VERSION-0.0.39'
 sourceCompatibility = 1.8
 
 repositories {
@@ -30,8 +30,11 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile("org.mariadb.jdbc:mariadb-java-client")
+
 	runtime('com.h2database:h2')
 	compileOnly('org.projectlombok:lombok')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+
 	compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.2.15'
 }
