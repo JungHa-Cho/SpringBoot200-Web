@@ -16,16 +16,10 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-before_script:
-  - ls
-
 script:
   - "./gradlew clean build"
 
 before_deploy:
-  - "echo 'ready?'"
-  - ls
-  - pwd
   - zip -r SpringBoot200-Web *
   - mkdir -p deploy
   - mv SpringBoot200-Web.zip deploy/SpringBoot200-Web.zip
