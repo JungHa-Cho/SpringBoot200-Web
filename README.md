@@ -1,5 +1,5 @@
-### Spring Boot 2.0.0으로 웹 서비스 해보기 [![Build Status](https://travis-ci.org/JungHa-Cho/SpringBoot200-Web.svg?branch=master)](https://travis-ci.org/JungHa-Cho/SpringBoot200-Web)
-
+### Spring Boot 1.5.9으로 웹 서비스 해보기 [![Build Status](https://travis-ci.org/JungHa-Cho/SpringBoot200-Web.svg?branch=master)](https://travis-ci.org/JungHa-Cho/SpringBoot200-Web)
+변경!! 2.0.0 -> 1.5.9로 변경       
 - [강좌 참조](https://github.com/jojoldu/springboot-webservice)    
     
 2018-03-20 : 최초 프로젝트 생성, HELLO Controller 테스팅    
